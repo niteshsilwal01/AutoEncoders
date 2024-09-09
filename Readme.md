@@ -1,18 +1,18 @@
-Autoencoders are a unique category of neural network designs where the output mirrors the input. They are trained in an unsupervised manner to grasp highly simplified representations of the input data. These simplified features are then transformed back to reconstruct the original data. Essentially, autoencoders are tasked with predicting their input, essentially modeling the identity function. These networks feature a narrow middle section with a few neurons, compelling them to generate effective representations that condense the input into a low-dimensional code. This code is utilized by the decoder to recreate the original input.
+### AUTOENCODERS
 
-A standard autoencoder architecture consists of three primary components:
+Autoencoders are a special type of neural network architecture where the output aims to replicate the input. These networks are trained in an unsupervised fashion to learn compressed representations of the input data. The compressed features are then decoded to reconstruct the original input. In essence, autoencoders learn to predict their own input, effectively modeling the identity function. The network's structure includes a narrow bottleneck layer with fewer neurons, forcing it to capture key patterns and compress the input data into a lower-dimensional code. This code is then used by the decoder to reconstruct the input.
 
-1. **Encoding Architecture**: 
-This component includes a sequence of layers with progressively fewer nodes, culminating in a latent view representation.
+A typical autoencoder consists of three main components:
 
-2. **Latent View Representation**: 
-This represents the most basic level of space where inputs are minimized and information is retained.
+1. **Encoding Architecture**: A series of layers with a decreasing number of nodes, ending with a latent representation.
 
-3. **Decoding Architecture**: 
-This is essentially the mirror image of the encoding architecture, with each layer having an increasing number of nodes, ultimately producing an output that closely resembles the original input.
+2. **Latent Representation**: A compact, low-dimensional representation of the input, where key information is preserved.
 
-The AutoEncoder network architecture used for image reconstruction in this notebook is as below:
+3. **Decoding Architecture**: A mirror of the encoding architecture, where each layer has an increasing number of nodes, ultimately producing an output that approximates the original input.
+
+The autoencoder architecture used for image reconstruction in this notebook is outlined below:
 
 ![alt text](<images/AE Network Diagram.png>)
 
-   
+--------------------------------------------------------------------------------------------------------------------------------
+Feel free to add any specific details about your implementation or the image reconstruction task!
